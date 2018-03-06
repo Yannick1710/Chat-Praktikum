@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> CHAT </title>
+      <link href="style.css" type="text/css" rel="stylesheet">
+      <link href="Skeleton/css/skeleton.css" type="text/css" rel="stylesheet">
+      <link href="Skeleton/css/normalize.css" type="text/css" rel="stylesheet">
+      <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+      <meta charset="utf-8">
+    </head>
+    <body>
+      <div id="app">
+        <h1> Chat </h1>
+        <div class="chatfield">
+          <div v-for="message in messages" class="chatmessage">
+            <div class="message"> <p> {{ message.text }} </p><span class="delete"><i v-on:click= "deleteMessage(message)" class="fas fa-trash-alt"> </i></span></div>
+            <div class="name"> {{ message.name }} </div>
+            <div class="arrow"></div>
+          </div>
+        </div>
+        <div class="absendebereich">
+          <textarea v-model="message "class="messagenachricht "type="text" placeholder="Nachricht"></textarea>
+          <input v-model="name" class="namenn" type="text" placeholder="Ihr Name"></input>
+          <button @click="addMessage" class="Absenden">Absenden</button>
+        </div>
+      </div>
+
+      <!-- Vue -->
+      <script src="https://unpkg.com/vue/dist/vue.js"></script>
+      <!-- Firebase -->
+      <script src="https://gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+      <!-- VueFire -->
+      <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
+      <script src="script.js">
+      </script>
+    </body>
+  </html>
