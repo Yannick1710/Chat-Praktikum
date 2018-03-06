@@ -28,11 +28,11 @@ h1{
   font-size: 20px;
   margin-left: 85px;
   border-radius: 20px;
-  padding-top: 14px;
+  padding-top: 16px;
   padding-bottom: 8px;
-  padding-left: 16px;
+  padding-left: 8px;
   padding-right: 8px;
-  width: 370px;
+  width: 470px;
   background-color: rgb(0,200,0);
   margin-top: 40px;
   margin-bottom: 15px;
@@ -43,10 +43,10 @@ h1{
 
 .name{
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 14px;
   border-radius: 60px;
-  padding-top: 6px;
-  padding-bottom: 4px;
+  padding-top: 8px;
+  padding-bottom: 6px;
   margin-top: -60px;
   color: black;
   float: left;
@@ -67,9 +67,9 @@ h1{
 
 .Absenden{
   overflow: auto;
-  height: 20px;
+  height: 25px;
   margin-left: 540px;
-  height: 60px;
+  height: 70px;
   float: left;
   margin-top: -60px;
   transition: background-color 0.5s linear;
@@ -81,13 +81,55 @@ h1{
 }
 
 .namenn{
-  margin-left: 10px;
+  margin-left: 15px;
   margin-top: 30px;
   float: left;
 }
 .messagenachricht{
-  margin-left: 140px;
+  margin-left: 185px;
   float: left;
-  width: 175px;
+  width: 190px;
 
+}
+
+.loginfield{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.logins{
+  width: 280px;
+  height: 10px;
+  padding-bottom: 160px;
+  margin:auto;
+  margin-top: 20%;
+  border: rgb(170,170,170) solid 0.4px;
+  text-align: center;
+  padding-top: 260px;
+}
+
+.namee{
+  margin-bottom: 10px;
+}
+
+.passwort{
+  margin-bottom: 10px;
+}
+
+.yk{
+  margin: auto;
+  margin-top: -180px;
+  margin-bottom: 65px;
+  font-weight: lighter;
+  font-size: 65px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.loginbutton:hover{
+  background-color: #1ABC9C;
+  color: white;
+  transition: background-color 1s;
 }
